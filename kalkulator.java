@@ -6,8 +6,10 @@ public class kalkulator {
         System.out.println("Program berjalan...");
         
         Scanner input = new Scanner(System.in);
-
-        System.out.println("=== Kalkulator versi 2 ===");
+        char lanjut;
+        
+        do {
+            System.out.println("=== Kalkulator versi 2 ===");
 
         System.out.print("Masukkan angka pertama: ");
         double angka1 = input.nextDouble();
@@ -48,7 +50,11 @@ public class kalkulator {
             default:
                 System.out.println("Operator tidak valid.");
         }
-
-        input.close();
+        System.out.print("Ingin menghitung lagi? (y/n): ");
+            lanjut = input.next().charAt(0);
+    } while (lanjut == 'y' || lanjut == 'Y');
+    
+    System.out.println("Terima kasih telah menggunakan kalkulator.");
+    input.close();
     }
 }
