@@ -4,7 +4,7 @@ public class kalkulator {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("=== Kalkulator Sederhana ===");
+        System.out.println("=== Kalkulator versi 2 ===");
 
         System.out.print("Masukkan angka pertama: ");
         double angka1 = input.nextDouble();
