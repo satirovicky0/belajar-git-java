@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class kalkulator {
     public static void main(String[] args) {
+
+        System.out.println("Program berjalan...");
+        
         Scanner input = new Scanner(System.in);
 
         System.out.println("=== Kalkulator versi 2 ===");
